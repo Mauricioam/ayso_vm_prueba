@@ -1,3 +1,11 @@
+import platform, os
+
+print("Sistema:", platform.system(), platform.release())
+print("Distribución:", platform.freedesktop_os_release()["PRETTY_NAME"])
+print("Núcleos:", os.cpu_count())
+print("Usuario:", os.getlogin())
+
+
 ## Caja del kiosco - 1
 valid_name = False
 while not valid_name:
